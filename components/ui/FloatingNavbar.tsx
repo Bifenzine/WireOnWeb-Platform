@@ -8,6 +8,7 @@ import {
 } from "framer-motion";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 export const FloatingNav = ({
   navItems,
@@ -69,16 +70,29 @@ export const FloatingNav = ({
           backgroundColor: "rgba(17, 25, 40, 0.75)",
           borderRadius: "12px",
           border: "1px solid rgba(255, 255, 255, 0.125)",
-        }}
-      >
+        }}>
+        <Link
+          href=""
+          className={cn(
+            "relative dark:text-neutral-50 items-center  flex text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
+          )}>
+          <span className=" !cursor-pointer">
+            <Image
+              src="/Logo/wireonweb.png"
+              alt="logo"
+              width={60}
+              height={60}
+              className="object-cover"
+            />
+          </span>
+        </Link>
         {navItems.map((navItem: any, idx: number) => (
           <Link
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(
               "relative dark:text-neutral-50 items-center  flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
-            )}
-          >
+            )}>
             <span className="block sm:hidden">{navItem.icon}</span>
             {/* add !cursor-pointer */}
             {/* remove hidden sm:block for the mobile responsive */}

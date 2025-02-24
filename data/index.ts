@@ -50,16 +50,16 @@ export const gridItems = [
     spareImg: "/b4.svg",
   },
 
-  {
-    id: 5,
-    title: "Currently developing a cutting-edge JavaScript Animation library.",
-    description: "",
-    className: "md:col-span-3 md:row-span-2",
-    imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-    titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/b5.svg",
-    spareImg: "/grid.svg",
-  },
+  // {
+  //   id: 5,
+  //   title: "Currently developing a cutting-edge JavaScript Animation library.",
+  //   description: "",
+  //   className: "md:col-span-3 md:row-span-2",
+  //   imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
+  //   titleClassName: "justify-center md:justify-start lg:justify-center",
+  //   img: "/b5.svg",
+  //   spareImg: "/grid.svg",
+  // },
   {
     id: 6,
     title: "Ready to collaborate on your next enterprise-level project.",

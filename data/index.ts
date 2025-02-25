@@ -113,36 +113,42 @@ export const testimonials = [
       "Working with WireOnWeb was a game-changer for our digital transformation. Their expertise in custom software solutions, combined with a commitment to delivering results on time, has transformed how we approach technology. If you're seeking a reliable partner to build scalable, high-performance web applications, WireOnWeb is the right choice.",
     name: "Sarah Davis",
     title: "Chief Technology Officer, Innovate Enterprises",
+    image: "/Testimonials/sarah.png",
   },
   {
     quote:
       "WireOnWeb demonstrated exceptional skill and professionalism in developing our enterprise-level solutions. Their team provided insightful guidance throughout the project, ensuring that we not only met our deadlines but also exceeded our expectations. If you’re looking for a top-tier software development partner, we highly recommend WireOnWeb.",
     name: "David Morgan",
     title: "CEO, NextGen Solutions",
+    image: "/Testimonials/david.png",
   },
   {
     quote:
       "The team at WireOnWeb possesses unparalleled expertise in building scalable software systems. Their seamless integration with our existing infrastructure allowed us to modernize our operations without disruption. Their focus on innovation and quality makes them an ideal partner for any enterprise looking to grow digitally.",
     name: "Jessica Lee",
     title: "Head of Digital Transformation, GlobalTech Innovations",
+    image: "/Testimonials/jessica.png",
   },
   {
     quote:
       "WireOnWeb exceeded our expectations in every aspect. Their team delivered on our vision with exceptional attention to detail, and they worked tirelessly to ensure our success. Whether you need cutting-edge web development or tailored enterprise solutions, WireOnWeb is the partner you need to succeed in today’s competitive digital landscape.",
     name: "John Reynolds",
     title: "Managing Director, Stellar Industries",
+    image: "/Testimonials/john.png",
   },
   {
     quote:
       "As a growing enterprise, we were looking for a reliable partner to help us navigate the complexities of custom software development. WireOnWeb provided the technical expertise and strategic insights needed to scale our operations seamlessly. Their dedication to quality and customer success made them an invaluable part of our journey.",
     name: "Amanda King",
     title: "Vice President of Operations, Global Ventures",
+    image: "/Testimonials/amanda.png",
   },
   {
     quote:
       "From the initial consultation to the final product, WireOnWeb's professionalism and attention to detail were unmatched. Their team demonstrated deep technical knowledge and a commitment to delivering solutions that align with our long-term business goals. I would recommend WireOnWeb to any enterprise seeking reliable, forward-thinking software development.",
     name: "Michael Thompson",
     title: "Founder & CEO, Visionary Technologies",
+    image: "/Testimonials/michael.png",
   },
 ];
 

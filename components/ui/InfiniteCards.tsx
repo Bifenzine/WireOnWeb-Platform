@@ -71,6 +71,14 @@ export const InfiniteMovingCards = ({
       }
     }
   };
+
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
   return (
     <div
       ref={containerRef}
@@ -78,8 +86,7 @@ export const InfiniteMovingCards = ({
         // max-w-7xl to w-screen
         "scroller relative z-20 w-screen overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
         className
-      )}
-    >
+      )}>
       <ul
         ref={scrollerRef}
         className={cn(
@@ -87,8 +94,7 @@ export const InfiniteMovingCards = ({
           " flex min-w-full shrink-0 gap-16 py-4 w-max flex-nowrap",
           start && "animate-scroll ",
           pauseOnHover && "hover:[animation-play-state:paused]"
-        )}
-      >
+        )}>
         {items.map((item, idx) => (
           <li
             //   change md:w-[450px] to md:w-[60vw] , px-8 py-6 to p-16, border-slate-700 to border-slate-800
@@ -104,13 +110,11 @@ export const InfiniteMovingCards = ({
                 "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
             }}
             // change to idx cuz we have the same name
-            key={idx}
-          >
+            key={idx}>
             <blockquote>
               <div
                 aria-hidden="true"
-                className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
-              ></div>
+                className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"></div>
               {/* change text color, text-lg */}
               <span className=" relative z-20 text-sm md:text-lg leading-[1.6] text-white font-normal">
                 {item.quote}
@@ -119,10 +123,12 @@ export const InfiniteMovingCards = ({
                 {/* add this div for the profile img */}
                 <div className="me-3">
                   <Image
-                      width={50}
-                      height={50}
-                      className="rounded-full"
-                      src={item?.image} alt="profile" />
+                    width={50}
+                    height={50}
+                    className="rounded-full"
+                    src={item?.image}
+                    alt="profile"
+                  />
                 </div>
                 <span className="flex flex-col gap-1">
                   {/* change text color, font-normal to font-bold, text-xl */}

@@ -32,12 +32,15 @@ const Clients = () => {
                   src={company.img}
                   alt={company.name}
                   className="md:w-10 w-5"
+                  width={60}
+                  height={60}
                 />
                 <Image
                   src={company.nameImg}
                   alt={company.name}
                   width={company.id === 4 || company.id === 5 ? 100 : 150}
                   className="md:w-24 w-20"
+                  height={60}
                 />
               </div>
             </React.Fragment>
